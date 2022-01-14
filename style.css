@@ -1,0 +1,67 @@
+/*--------Google Fonts link Imported below----------*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&family=Prompt&display=swap');
+
+/*--------some common style that added in project-------*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*---------------Header section Styles start from here------*/
+header{
+    display: flex;
+    
+}
+.header-left-sec{
+    width: 50%;
+}
+.header-right-sec{
+    width: 50%;
+}
+
+
+
+
+/*--------------Popular collection style start here -------*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 85%;
+    background-color: #FFFFFF;
+}
+.section-title{
+    text-align: center;
+    margin:40px 0;
+}
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+}
+.collection{
+    width: 329px;
+    height: 476px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+.collection-banner img{
+    width: 300px;
+    height: 256px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+.collection, .collection-detail{
+    padding-left: 17px;
+}
+.collection-title{
+    margin-bottom: 5px;
+}
+.collection-detail, .collection-price{
+    margin-bottom: 5px;
+}
+.collection-detail, .collection-info p{
+    margin-bottom: 10px;
+}
