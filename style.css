@@ -8,17 +8,43 @@ body{
 
 
 /*---------------Header section Styles start from here------*/
-header{
+.header-section{
     display: flex;
-    
+    margin-bottom: 40px;
 }
-.header-left-sec{
+.head-section-half{
     width: 50%;
+    padding-left: 104px;
 }
-.header-right-sec{
-    width: 50%;
+.head-section-half>img{
+    width: 70%;
+    padding-left: 80px;
 }
 
+h1{
+    font-size: 50px;
+    
+}
+.blue-color{
+    color:rgb(108, 229, 238);
+}
+
+.head-section-half p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.head-button{
+    display: inline-block;
+     font-size: 16px;
+    background-color: #E02C6D;
+    padding:10px 50px;
+    color: white;
+    border-radius: 25px; 
+}
+.head-button a{
+    color: white;
+    text-decoration: none;
+}
 
 
 
@@ -27,6 +53,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 95px;
 }
 .container{
     width: 85%;
@@ -65,6 +92,7 @@ main{
 }
 .collection-detail, .collection-info p{
     margin-bottom: 10px;
+    
 }
 
 
@@ -78,6 +106,16 @@ main{
 /*=======================Media Queries =================*/
 /*-------Mobile devices(PIxel-2)---------*/
 @media only screen and (max-width:688px) {
+    .header-section{
+        flex-direction: column;
+    }
+    .sec1-half-width img{
+        width: 100%;
+    }
+
+    main{
+        margin-left: 0px;
+    }
     .container{
         width: 100%;
     }
@@ -89,6 +127,9 @@ main{
 
 /*---------------Media Queries for tablet(Ipad) Devices ---------*/
 @media only screen and (min-width:688px) and (max-width:992px){
+    main{
+        margin-left: 0px;
+    }
     .container{
         margin-right: 40px;
     }
