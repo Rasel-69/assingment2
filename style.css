@@ -19,6 +19,10 @@ body{
 .head-section-half>img{
     width: 70%;
     padding-left: 80px;
+    transition: 1s;
+}
+.header-section img:hover{
+    transform: translate(-10px,-4px);
 }
 
 h1{
@@ -44,6 +48,10 @@ h1{
 .head-button a{
     color: white;
     text-decoration: none;
+}
+.head-button, .fa-arrow-right{
+    font-size: 16px;
+    
 }
 
 
@@ -104,13 +112,16 @@ main{
 
 
 /*=======================Media Queries =================*/
+
+
 /*-------Mobile devices(PIxel-2)---------*/
 @media only screen and (max-width:688px) {
     .header-section{
         flex-direction: column;
     }
-    .sec1-half-width img{
+    .head-section-half img{
         width: 100%;
+        
     }
 
     main{
@@ -125,8 +136,15 @@ main{
     }
 }
 
-/*---------------Media Queries for tablet(Ipad) Devices ---------*/
+
+
+/*---------------Tablet(Ipad) Devices ---------*/
 @media only screen and (min-width:688px) and (max-width:992px){
+    .head-section-half img{
+        margin-top: 209px;
+        padding-left: 0;
+        width: 100%;
+    }
     main{
         margin-left: 0px;
     }
