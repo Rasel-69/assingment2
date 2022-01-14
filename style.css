@@ -46,6 +46,7 @@ main{
     height: 476px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    padding: 10px 0;
 }
 .collection-banner img{
     width: 300px;
@@ -64,4 +65,37 @@ main{
 }
 .collection-detail, .collection-info p{
     margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*=======================Media Queries =================*/
+/*-------Mobile devices(PIxel-2)---------*/
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 25px;
+    }
+}
+
+/*---------------Media Queries for tablet(Ipad) Devices ---------*/
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        margin-right: 40px;
+    }
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+
 }
