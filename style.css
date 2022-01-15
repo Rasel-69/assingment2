@@ -40,7 +40,7 @@ h1{
 .head-button{
     display: inline-block;
      font-size: 16px;
-    background-color: #E02C6D;
+    background-color: #fa6199;
     padding:10px 50px;
     color: white;
     border-radius: 25px; 
@@ -53,7 +53,7 @@ h1{
     font-size: 16px;
     
 }
-
+/******************Header section style end hear***************/
 
 
 /*--------------Popular collection style start here -------*/
@@ -104,11 +104,26 @@ main{
     
 }
 
+#see-more-link{
+    font-size: 16px;
+    padding:10px 50px;
+    color:#E02C6D;
+    width: 20%;
+    border-radius: 25px;
+    position: absolute;
+    right: 0px;
+    padding-right: 0px;
+    
+}
+#see-more-link a{
+    text-decoration: none;
+    color: #E02C6D;
+}
    
+/*******************Popular collection section styles end here********/
 
 
-
-/*----------------------Top Trending styles-----*/
+/*----------------------Top Trending styles star here-----------*/
 .top-trend-container{
     display: flex;
     padding: 100px 0;
@@ -119,14 +134,17 @@ main{
 }
 
 #top-trend-button{
-    /* display: inline-block; */
      font-size: 16px;
-    /* background-color: #E02C6D; */
     padding:10px 50px;
     color: white;
     background-color: orange;
     width: 20%;
     border-radius: 25px; 
+    transition: 1s;
+}
+#top-trend-button:hover{
+    transform: translate(0px,-3px);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.363);
 }
 #top-trend-button a{
     color: white;
