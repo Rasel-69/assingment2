@@ -115,6 +115,26 @@ main{
 }
 
 
+/*----------------------Top Trending styles-----*/
+.top-trend-container{
+    display: flex;
+    padding: 100px 0;
+}
+.top-trend-half-width{
+    width: 50%;
+    padding-left: 104px;
+}
+
+.top-trend-half-width>img{
+    width: 70%;
+    padding-left: 70px;
+}
+#orange-color{
+    color: orange;
+}
+
+
+
 /*-----------Footer section styles start from here -------*/
 footer{
     display: flex;
